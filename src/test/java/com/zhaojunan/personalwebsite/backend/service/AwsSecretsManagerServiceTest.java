@@ -1,6 +1,7 @@
 package com.zhaojunan.personalwebsite.backend.service;
 
+
 // TODO
-public class EmailServiceTest {
+public class AwsSecretsManagerServiceTest {
 
 }
