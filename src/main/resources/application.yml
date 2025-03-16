@@ -1,0 +1,25 @@
+spring:
+  mail:
+    host: email-smtp.us-east-1.amazonaws.com
+    port: 587
+    username: ${SMTP_USERNAME}  # Reference to environment variable
+    password: ${SMTP_PASSWORD}  # Reference to environment variable
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+application:
+  name: personal-website-backend
+  email:
+    from: noreply@zhaojunan.com
+    to: jzhao2723@gmail.com
+
+logging:
+  level:
+    root: INFO
+    com.zhaojunan.personalwebsite.backend: DEBUG  # Enable detailed logs for your app
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %level - [%thread] %logger{36} - %msg%n"
