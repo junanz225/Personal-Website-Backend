@@ -20,6 +20,8 @@ application:
 logging:
   level:
     root: INFO
-    com.zhaojunan.personalwebsite.backend: DEBUG  # Enable detailed logs for your app
+    com.zhaojunan: DEBUG  # Enable detailed logs for your app
+  file:
+    name: /var/log/personal-website-backend.log  # Store logs in /var/log directory
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} - %level - [%thread] %logger{36} - %msg%n"
